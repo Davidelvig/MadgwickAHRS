@@ -30,7 +30,7 @@ private:
     float yaw;
     char anglesComputed;
     void computeAngles();
-public:
+public:  // these four made public (was private in original)
     float q0;
     float q1;
     float q2;
@@ -72,5 +72,6 @@ public:
     }
 };
 #endif
+
 
 
