@@ -24,16 +24,17 @@ class Madgwick{
 private:
     static float invSqrt(float x);
     float beta;				// algorithm gain
-    float q0;
-    float q1;
-    float q2;
-    float q3;	// quaternion of sensor frame relative to auxiliary frame
     float invSampleFreq;
     float roll;
     float pitch;
     float yaw;
     char anglesComputed;
     void computeAngles();
+public:
+    float q0;
+    float q1;
+    float q2;
+    float q3;	// quaternion of sensor frame relative to auxiliary frame
 
 //-------------------------------------------------------------------------------------------
 // Function declarations
@@ -71,4 +72,5 @@ public:
     }
 };
 #endif
+
 
